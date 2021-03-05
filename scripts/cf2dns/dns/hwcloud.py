@@ -63,7 +63,7 @@ class HWCloudApi:
           response_status_code = httpError.response.status_code
           #response_header_params = httpError.response.headers
           #request_id = response_header_params["X-Request-Id"]
-          #response_body = httpError.response.text
+          response_body = httpError.response.text
           return {
             "result": False,
             "message": "错误码：%s，错误描述：%s" % (response_status_code,response_body)
@@ -172,7 +172,7 @@ class HWCloudApi:
           response_status_code = httpError.response.status_code
           #response_header_params = httpError.response.headers
           #request_id = response_header_params["X-Request-Id"]
-          #response_body = httpError.response.text
+          response_body = httpError.response.text
           return {
             "result": False,
             "message": "错误码：%s，错误描述：%s" % (response_status_code,response_body)
@@ -215,7 +215,7 @@ class HWCloudApi:
           response_status_code = httpError.response.status_code
           #response_header_params = httpError.response.headers
           #request_id = response_header_params["X-Request-Id"]
-          #response_body = httpError.response.text
+          response_body = httpError.response.text
           return {
             "result": False,
             "message": "错误码：%s，错误描述：%s" % (response_status_code,response_body)
